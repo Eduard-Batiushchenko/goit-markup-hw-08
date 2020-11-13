@@ -1,0 +1,84 @@
+.modal-label-icon {
+  position: absolute;
+  top: 50%;
+  left: 12px;
+  width: 18px;
+  height: 18px;
+
+  .modal-label:focus-within & {
+    fill: $third-bg-color;
+  }
+}
+.contacts-icons {
+  margin-right: 10px;
+  display: inline-flex;
+  align-items: center;
+  width: 16px;
+  height: 12px;
+  fill: $secondary-text-color;
+
+  .contacts .link:hover &,
+  .contacts .link:focus & {
+    fill: $third-text-color;
+  }
+}
+
+.social-icons-item {
+  width: 20px;
+  height: 20px;
+  fill: $social-icons-color;
+
+  .footer-section & {
+    fill: $heroic-text-color;
+  }
+}
+
+.social-icons-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: $primary-bg-white;
+
+  .footer-section & {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+  }
+  &:hover,
+  &:focus {
+    background-color: $third-bg-color;
+  }
+  &:hover .social-icons-item,
+  &:focus .social-icons-item {
+    fill: $heroic-text-color;
+  }
+}
+
+.telegram-icon {
+  position: absolute;
+  top: 50%;
+  right: 28px;
+  transform: translateY(-50%);
+  width: 24px;
+  height: 24px;
+}
+
+.social-icons-menu {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+
+  .social-icons-list:not(:last-child) {
+    margin-right: 10px;
+  }
+
+  &.footer-icons {
+    justify-content: flex-start;
+  }
+}

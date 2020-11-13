@@ -1,0 +1,52 @@
+.about-us {
+  & .list {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  & .item {
+    position: relative;
+    width: 370px;
+  }
+  .description {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+
+    background: rgba(47, 48, 58, 0.8);
+  }
+  .description-text {
+    display: flex;
+    justify-content: center;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 27px;
+    padding-bottom: 27px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.143;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    text-align: center;
+
+    color: $heroic-text-color;
+  }
+}
+
+.our-team {
+  background-color: $secondary-bg-grey;
+
+  .list {
+    display: flex;
+    justify-content: space-between;
+  }
+  .item {
+    width: 270px;
+    padding-bottom: 30px;
+    background-color: $primary-bg-white;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+  }
+}

@@ -1,0 +1,28 @@
+.main-clients {
+  padding-bottom: 75px;
+
+  .list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .item {
+    width: 170px;
+  }
+  & .item:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+.clients-item {
+  width: 170px;
+  height: 90px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  fill: $social-icons-color;
+
+  .clients-link:hover &,
+  .clients-link:focus & {
+    fill: $third-text-color;
+    border-color: $third-text-color;
+  }
+}

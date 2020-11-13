@@ -1,0 +1,19 @@
+.logo {
+  text-decoration: none;
+  color: $third-text-color;
+
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.17;
+
+  &-part {
+    color: $primary-text-color;
+
+    font-weight: 400;
+    line-height: 1.38;
+  }
+  .footer &-part {
+    color: $heroic-text-color;
+  }
+}

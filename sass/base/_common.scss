@@ -1,0 +1,51 @@
+.nav .link,
+.contacts .link,
+svg,
+.social-icons-link,
+.clients-item,
+.section.portfolio,
+button {
+  transition: $transition;
+}
+
+body {
+  background-color: $primary-bg-white;
+
+  font-family: Roboto, sans-serif;
+  letter-spacing: 0.03em;
+}
+
+img {
+  display: block;
+}
+.list {
+  list-style-type: none;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-left: 0;
+}
+
+.title {
+  margin-top: 0px;
+  margin-bottom: 50px;
+}
+
+.photo {
+  margin-bottom: 30px;
+}
+
+.link {
+  text-decoration: none;
+  color: $secondary-text-color;
+
+  font-weight: 500;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+
+  &:hover,
+  &:focus {
+    color: $third-text-color;
+  }
+}
