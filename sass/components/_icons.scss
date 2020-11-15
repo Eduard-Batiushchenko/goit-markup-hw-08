@@ -17,8 +17,8 @@
   height: 12px;
   fill: $secondary-text-color;
 
-  .contacts .link:hover &,
-  .contacts .link:focus & {
+  .nav-item:hover &,
+  nav-item:focus & {
     fill: $third-text-color;
   }
 }
@@ -60,7 +60,7 @@
 .telegram-icon {
   position: absolute;
   top: 50%;
-  right: 28px;
+  right: 26px;
   transform: translateY(-50%);
   width: 24px;
   height: 24px;
@@ -78,7 +78,17 @@
     margin-right: 10px;
   }
 
-  &.footer-icons {
-    justify-content: flex-start;
+  @media screen and(min-width: 1200px) {
+    &.footer-icons {
+      justify-content: flex-start;
+    }
+  }
+}
+
+.social-icons-link {
+  &:hover,
+  &:focus {
+    outline: none;
+    border-color: $third-text-color;
   }
 }

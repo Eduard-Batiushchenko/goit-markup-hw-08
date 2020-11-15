@@ -11,7 +11,6 @@
     <link 
     href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" 
     rel="stylesheet">
-    <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./css/main.min.css">
 </head>
 
@@ -19,11 +18,17 @@
 
     <!-- Header-container -->
     <header class="header">
-        <div class="container">
-            <div class="nav-header">
-                <nav class="nav">
-                    <a href="./index.html" class="logo">Web<span class="logo-part">Studio</span> </a>
-                    <ul class="list">
+        <div class="container nav-header">
+            <nav class="nav">
+                <a href="./index.html" class="logo">Web<span class="logo-part">Studio</span> </a>
+                <button class="menu-button" data-menu-button type="button">
+                    <svg width="40" height="40" class="burger-icons" aria-label="Переключатель мобильного меню">
+                        <use class="icon-menu" href="./img/svg/spride.svg#menu-burger"></use>
+                        <use class="icon-cross" href="./img/svg/spride.svg#menu-burger-close"></use>
+                    </svg>
+                </button>
+                <div class="menu-container" data-menu>
+                    <ul class="menu-list list">
                         <li class="nav-item">
                             <a class="link" href="./index.html">Студия</a>
                         </li>
@@ -34,24 +39,24 @@
                             <a class="link" href="">Контакты</a>
                         </li>
                     </ul>
-                </nav>
-                <ul class="contacts list">
-                    <li class="nav-item">
-                        <a class="link" href="mailto:info@devstudio.com">
-                            <svg class="contacts-icons">
-                                <use href="./img/svg/spride.svg#mail"></use>
-                            </svg>
-                            info@devstudio.com</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="link" href="tel:+380961111111">
-                            <svg class="contacts-icons">
-                                <use href="./img/svg/spride.svg#phone"></use>
-                            </svg>
-                            +38 096 111 11 11</a>
-                    </li>
-                </ul>
-            </div>
+                    <ul class="contacts-list list">
+                        <li class="nav-item">
+                            <a class="link" href="mailto:info@devstudio.com">
+                                <svg class="contacts-icons">
+                                    <use href="./img/svg/spride.svg#mail"></use>
+                                </svg>
+                                info@devstudio.com</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="link" href="tel:+380961111111">
+                                <svg class="contacts-icons">
+                                    <use href="./img/svg/spride.svg#phone"></use>
+                                </svg>
+                                +38 096 111 11 11</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
         </div>
     </header>
 
@@ -239,7 +244,7 @@
 
     <!-- Footer-container -->
     <footer class="footer">
-        <div class="container">
+        <div class="container footer-container">
             <section class="footer-section">
                 <a class="logo" href="./index.html">Web<span class="logo-part">Studio</span> </a>
                 <address class="address">
@@ -303,19 +308,20 @@
                             <input class="footer-form-input" type="email" placeholder="E-mail">
                         </label>
                     </form>
-                    <div class="button-container">
-                        <button class="button footer-button"> Подписаться</button>
+                    <!-- <div class="button-container"> -->
+                    <button class="button footer-button"> Подписаться
                         <svg class="telegram-icon">
                             <use href="./img/svg/spride.svg#telegram">
                             </use>
                         </svg>
-                    </div>
+                    </button>
+                    <!-- </div> -->
                 </div>
             </section>
     
         </div>
     </footer>
-
+    <script src="./js/menu.js"></script>
 </body>
 
 </html>
