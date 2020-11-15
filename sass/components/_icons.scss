@@ -1,14 +1,4 @@
-.modal-label-icon {
-  position: absolute;
-  top: 50%;
-  left: 12px;
-  width: 18px;
-  height: 18px;
 
-  .modal-label:focus-within & {
-    fill: $third-bg-color;
-  }
-}
 .contacts-icons {
   margin-right: 10px;
   display: inline-flex;

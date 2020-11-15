@@ -136,3 +136,14 @@
     fill: $third-text-color;
   }
 }
+.modal-label-icon {
+  position: absolute;
+  top: 50%;
+  left: 12px;
+  width: 18px;
+  height: 18px;
+
+  .modal-label:focus-within & {
+    fill: $third-bg-color;
+  }
+}
