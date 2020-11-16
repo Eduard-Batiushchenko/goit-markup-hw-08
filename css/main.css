@@ -972,7 +972,7 @@ nav-item:focus .contacts-icons {
   .benefits-item:not(:nth-last-child(2n + 1)) {
     margin-right: 30px;
   }
-  .benefits-item:not(:nth-last-child(-n + 3)) {
+  .benefits-item:not(:nth-last-child(-n + 2)) {
     margin-bottom: 30px;
   }
 }
