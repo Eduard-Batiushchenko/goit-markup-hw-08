@@ -1,11 +1,10 @@
-
 .contacts-icons {
   margin-right: 10px;
   display: inline-flex;
   align-items: center;
   width: 16px;
   height: 12px;
-  fill: $secondary-text-color;
+  fill: currentColor;
 
   .nav-item:hover &,
   nav-item:focus & {
