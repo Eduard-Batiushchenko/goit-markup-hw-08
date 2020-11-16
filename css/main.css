@@ -392,6 +392,12 @@ img {
   padding-bottom: 26px;
 }
 
+@media screen and (min-width: 768px) {
+  .nav {
+    align-items: center;
+  }
+}
+
 .header {
   position: relative;
 }
@@ -497,8 +503,11 @@ img {
 
 @media screen and (min-width: 768px) {
   .menu-container {
-    display: inline-flex;
+    display: flex;
     align-items: center;
+    flex-grow: 1;
+    justify-content: space-between;
+    margin-left: 83px;
   }
 }
 
@@ -517,19 +526,7 @@ img {
     align-items: center;
   }
   .menu-list .nav-item:not(:last-child) {
-    margin-right: 40px;
-  }
-  .menu-list .nav-item:last-child {
-    margin-right: 84px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .menu-list .nav-item:not(:last-child) {
     margin-right: 50px;
-  }
-  .menu-list .nav-item:last-child {
-    margin-right: 305px;
   }
 }
 
