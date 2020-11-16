@@ -1288,9 +1288,12 @@ nav-item:focus .contacts-icons {
   .footer-from-container {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: baseline;
   }
-  .footer-section {
+  .footer-section:last-child {
+    width: calc((100% - 30px) / 2);
+  }
+  .footer-section:not(:last-child) {
     width: calc((100% - 30px * 3) / 4);
   }
   .footer .container {
