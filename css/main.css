@@ -299,6 +299,8 @@ body.modal-open {
 
 img {
   display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 .list {
@@ -362,7 +364,7 @@ img {
 }
 
 .section .name {
-  margin-top: 0px;
+  margin-top: 30px;
   margin-bottom: 10px;
   text-align: center;
   color: #212121;
@@ -718,6 +720,14 @@ img {
   margin-bottom: 30px;
 }
 
+@media screen and (min-width: 1px) and (max-width: 1199px) {
+  .modal-label.confirm {
+    font-size: 12px;
+    line-height: 1.17;
+    text-align: left;
+  }
+}
+
 .modal-label .modal-link {
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -904,10 +914,42 @@ nav-item:focus .contacts-icons {
   text-align: center;
   padding-top: 200px;
   padding-bottom: 200px;
-  background-image: radial-gradient(circle at center, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/hero-bg.jpg);
+  background-image: radial-gradient(circle at center, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/hero-bg-480@1x.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top center;
+}
+
+@media screen and (min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
+  .heroic {
+    background-image: radial-gradient(circle at center, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/hero-bg-480@2x.jpg);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .heroic {
+    background-image: radial-gradient(circle at center, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/hero-bg-768@1x.jpg);
+  }
+}
+
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .heroic {
+    background-image: radial-gradient(circle at center, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/hero-bg-768@2x.jpg);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .heroic {
+    padding-top: 200px;
+    padding-bottom: 200px;
+    background-image: radial-gradient(circle at center, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/hero-bg-1600@1x.jpg);
+  }
+}
+
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .heroic {
+    background-image: radial-gradient(circle at center, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/hero-bg-1600@2x.jpg);
+  }
 }
 
 .heroic .title {
@@ -1096,7 +1138,6 @@ nav-item:focus .contacts-icons {
 }
 
 .our-team .item {
-  width: 100%;
   padding-bottom: 30px;
   background-color: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -1125,6 +1166,9 @@ nav-item:focus .contacts-icons {
 }
 
 @media screen and (min-width: 1200px) {
+  .our-team .item {
+    width: calc((100% - 30px * 3) / 4);
+  }
   .our-team .item:not(:nth-last-child(-n + 1)) {
     margin-right: 30px;
   }

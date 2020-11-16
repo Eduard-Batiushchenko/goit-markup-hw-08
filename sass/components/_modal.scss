@@ -89,6 +89,12 @@
     color: $secondary-text-color;
 
     margin-bottom: 30px;
+
+    @media screen and(min-width: 1px) and(max-width: 1199px) {
+      font-size: 12px;
+      line-height: 1.17;
+      text-align: left;
+    }
   }
   .modal-link {
     line-height: 1.71;
