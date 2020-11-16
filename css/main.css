@@ -1295,6 +1295,7 @@ nav-item:focus .contacts-icons {
   }
   .footer-section:not(:last-child) {
     width: calc((100% - 30px * 3) / 4);
+    margin-right: 30px;
   }
   .footer .container {
     display: flex;
