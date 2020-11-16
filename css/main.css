@@ -965,6 +965,12 @@ nav-item:focus .contacts-icons {
   width: 100%;
 }
 
+@media screen and (min-width: 1px) and (max-width: 767px) {
+  .benefits-item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .benefits-item {
     flex-basis: calc((100% - 30px) / 2);
